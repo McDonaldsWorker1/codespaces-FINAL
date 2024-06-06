@@ -1,0 +1,41 @@
+body {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: white;
+}
+.container {
+    padding: 20px;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    color: #070707;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    color: #f90303;
+}
+
+
+.slide-in {
+    background-color: rgb(179, 179, 52);
+    color: white;
+    padding: 5px 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
