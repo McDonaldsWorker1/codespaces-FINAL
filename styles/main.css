@@ -39,3 +39,19 @@ a:hover {
         transform: translateX(0);
     }
 }
+
+
+
+.rotate {
+    animation: rotation 4s 5 linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
